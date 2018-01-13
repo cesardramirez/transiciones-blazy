@@ -1,0 +1,36 @@
+body {
+	background-color: gray;
+	font-family: Arial; 
+}
+
+img {
+	transition: .5s;
+	opacity: 0;
+	width: 100%;
+	object-fit: cover;
+	position: relative;
+	left: -40%;
+	/* transform: rotate(360deg); */
+}
+
+img.b-loaded {
+	opacity: 1;
+	left: 0;
+	/* transform: rotate(0deg); */
+}
+
+figure {
+	background-image: url('../images/pacman.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	max-width: 700px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+figcaption {
+	background-color: white;
+	font-size: 18px;
+	padding: 15px 10px;
+	border-bottom: 5px solid lightgray;
+}
